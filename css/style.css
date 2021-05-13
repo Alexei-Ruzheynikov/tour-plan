@@ -879,7 +879,8 @@ template {
     width: 340px;
   }
   .map {
-    width: 340px;
+    max-width: 340px;
+    height: 210px;
   }
 }
 
@@ -960,7 +961,7 @@ template {
     width: 100%;
   }
   .map {
-    width: 100%;
+    min-width: 100%;
   }
 }
 
