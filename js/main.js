@@ -9,6 +9,17 @@ const hotelSwiper = new Swiper(".hotel__slider", {
   },
   keyboard: true,
 });
+const reviewsSwiper = new Swiper(".reviews-slider", {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
+  },
+  keyboard: true,
+});
 
 // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
