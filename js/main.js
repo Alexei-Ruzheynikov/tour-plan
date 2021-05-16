@@ -20,7 +20,7 @@ const reviewsSwiper = new Swiper(".reviews-slider", {
   },
   keyboard: true,
 });
-
+$(".parallax-window").parallax({ imageSrc: "img/newsletter-bg.jpg" });
 // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
 ymaps.ready(init);
