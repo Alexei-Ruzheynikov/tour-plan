@@ -7,6 +7,20 @@
     .card
         width: 230px
         height: 230px
+    .packages 
+        &-cards
+            display: grid
+            grid-template: 500px 500px / 1fr 1fr 1fr
+            &__info
+                width: 300px
+                &-one
+                    padding: 30px 21px 25px 32px
+        &-wrap
+            width: 300px
+        &__paragraph
+            margin: 27px 0px 17px 0px
+        &__price-one
+            margin-top: 41px
 @media (max-width: 992px)
     .container, .newsletter-wrapper
         max-width: 700px
@@ -54,7 +68,21 @@
     .card
         width: 340px
         height: 250px
-
+    .packages 
+        &-cards
+            display: grid
+            grid-template: 500px 500px / 1fr 1fr
+            &__info
+                width: 335px
+                &-one
+                    width: 366px
+                    padding: 30px 21px 25px 32px
+        &-wrap
+            width: 335px
+        &__paragraph
+            margin: 27px 0px 51px 0px
+        &__price-one
+            margin-top: 41px
 @media (max-width: 768px)
     .container
         max-width: 576px
@@ -140,6 +168,44 @@
     .card
         width: 49%
         height: 255px
+    .packages
+        &-cards
+            // &__other
+            //     border: 1px solid green
+            //     grid-column-start: 1
+            //     grid-column-end: 3
+    .packages 
+        &-cards
+            grid-template: 800px 500px / 1fr 1fr
+            &__first
+                flex-direction: column
+            &__other
+                // border: 1px solid green
+                grid-column-start: 1
+                grid-column-end: 3
+            &__info
+                width: 100%
+                &-one
+                    width: 100%
+                    height: 100%
+                    padding: 30px 21px 25px 32px
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    border-radius: 0px 0px 8px 8px
+        &-wrap
+            width: 100%
+            &__image--first
+                border-radius: 8px 8px 0px 0px
+        &__paragraph
+            margin: 27px 0px 51px 0px
+        &__price-one
+            margin-top: 41px
+            display: flex
+            align-items: 
+        &-wrap--first
+            width: 100%
+            height: 250px
 @media (max-width: 576px)
     .logo
         width: 99px
