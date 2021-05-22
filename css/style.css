@@ -1513,6 +1513,7 @@ template {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 539px;
 }
 
 .footer__ul {
@@ -1859,6 +1860,9 @@ template {
   }
   .packages__price-one {
     margin-top: 41px;
+  }
+  .footer__form {
+    max-width: 539px;
   }
   .footer-wrapper {
     -ms-grid-columns: (1fr)[6];

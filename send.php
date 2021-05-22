@@ -10,16 +10,18 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 $email = $_POST['email'];
 
-
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
 $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br>
-<b>Сообщение:</b><br>$message<br>
-<b>Адрес почты:</b><br>$email
+<b>Сообщение:</b> $message
 ";
+$body1 = "<h2>Новое обращение</h2><br>
+<b>Адрес почты: </b>$email
+";
+
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -55,10 +57,29 @@ try {
 //         }
 //     }   
 // }
+
+
+
+
+
 // Отправка сообщения
+// $mail->isHTML(true);
+// $mail->Subject = $title;
+// $mail->Body = $body; 
+
+
+if(isset($_POST['email'])){
 $mail->isHTML(true);
 $mail->Subject = $title;
-$mail->Body = $body;    
+$mail->Body = $body1;    
+} else {
+    // если нет, отправлена форма с телефоном и пр.
+$mail->isHTML(true);
+$mail->Subject = $title;
+$mail->Body = $body; 
+}
+
+
 
 // Проверяем отправленность сообщения
 if ($mail->send()) {$result = "success";} 
@@ -68,6 +89,8 @@ else {$result = "error";}
     $result = "error";
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
+
+
 
 // Отображение результата
 // echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
