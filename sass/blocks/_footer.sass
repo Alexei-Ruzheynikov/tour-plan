@@ -1,7 +1,7 @@
 .footer
     background-color: $dark
     color: $light
-    padding: 108px
+    padding-top: 108px
     padding-bottom: 46px
     &-wrapper
         display: grid
@@ -29,7 +29,7 @@
             grid-column: span 2
     &__contact
         &-details
-            grid-column: span 2
+            grid-column: span 2     
         &-form
             grid-column: span 2
     &__form
@@ -86,7 +86,7 @@
         border: none
         flex-basis: 100%
         margin-bottom: 23px
-        width: 539px
+        max-width: 539px
         height: 123px
         resize: none    
     &__button
@@ -107,3 +107,25 @@
         font-size: 12px
         line-height: 15px
         color: #E0E0E0
+    &__block
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-confidentiality
+        display: flex
+        justify-content: flex-end
+        margin-top: 101px
+    &__contract
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $light
+        text-decoration: none
+        margin-right: 13px
+    &__contract:nth-child(3)
+        margin-right: 0
+    &-payment
+        margin-left: 277px
+        
