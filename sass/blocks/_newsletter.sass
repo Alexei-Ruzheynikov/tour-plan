@@ -23,13 +23,15 @@
         align-items: center
         justify-content: space-between
     &-title
-        
         color: $light
+        font-style: normal
         font-weight: 300
         font-size: 24px
         line-height: 30px
         &__strong
             display: block
+            font-style: normal
+            font-weight: 600
             font-size: 36px
             line-height: 45px
             text-transform: uppercase
@@ -39,18 +41,33 @@
     height: 55px
     border-radius: 4px
     display: flex
-    
+    align-items: flex-start
+    justify-content: flex-start
+    flex-basis: 1
+    &__input
+        &-group  
+            max-width: 285px
+            
+            // flex-basis: 1
+            // width: 250px
     &__input
         // position: absolute
-        display: flex
-        flex-grow: 1
-        height: 100%
+        display: block
+        
+        width: 285px
+        // min-width: 285px
+        // width: 100%
+        // height: 100%
         border: none
         padding-left: 33px
         padding-right: 10px
+        padding-top: 18px
+        padding-bottom: 18px
         font-weight: 300
         font-size: 14px
         line-height: 18px
+        order: -3
+        
     &__button
         display: flex
         align-items: center
@@ -65,3 +82,10 @@
         background-color: $primary
         color: $light
         cursor: pointer
+        order: 1
+        font-style: normal
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        
+        // order: -2

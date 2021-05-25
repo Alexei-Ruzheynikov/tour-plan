@@ -38,7 +38,6 @@
               type="text"
               class="search__input"
               placeholder="Search Location"
-              required
             />
             <button class="search__button">
               <img src="img/search.svg" alt="Icon: search" />
@@ -88,7 +87,6 @@
                   type="text"
                   class="search__input"
                   placeholder="Search Location"
-                  required
                 />
                 <button class="search__button">
                   <img src="img/search.svg" alt="Icon: search" />
@@ -142,11 +140,11 @@
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <div class="stars">
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
+                <img class="stars-img" src="img/star.svg" alt="star" />
+                <img class="stars-img" src="img/star.svg" alt="star" />
+                <img class="stars-img" src="img/star.svg" alt="star" />
+                <img class="stars-img" src="img/star.svg" alt="star" />
+                <img class="stars-img" src="img/star.svg" alt="star" />
               </div>
               <h1 class="hotel-name hotel-info__name">Grand hilton hotel</h1>
               <span class="offer hotel-info__offer">Flash Offer</span>
@@ -163,7 +161,9 @@
             class="rating hotel-info__rating"
           >
             <span class="rating__text">User Rattings</span>
-            <span class="rating__counter">4.5/5</span>
+            <span class="rating__counter"
+              >4.5/<span class="rating__counter-small">5</span>
+            </span>
           </div>
           <!-- /.hotel-info__rating -->
         </div>
@@ -550,15 +550,17 @@
         <form
           action="send.php"
           method="POST"
-          class="subscribe newsletter__subscribe"
+          class="subscribe newsletter__subscribe form"
         >
-          <input
-            type="text"
-            class="subscribe__input"
-            placeholder="Your email address"
-            name="email"
-            required
-          />
+          <div class="subscribe__input-group">
+            <input
+              type="email"
+              class="subscribe__input"
+              placeholder="Your email address"
+              name="email"
+              required
+            />
+          </div>
           <button class="subscribe__button">Send</button>
         </form>
       </div>
@@ -896,21 +898,25 @@ quest"
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Full Name*"
-                name="name"
-                required
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-                required
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input phone"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
               <textarea
                 class="message footer__message"
                 placeholder="Message"
@@ -948,28 +954,34 @@ quest"
           <img src="img/close.svg" alt="Icon: close" />
         </a>
         <h3 class="modal__title modal__title--mb-3">Booking</h3>
-        <form action="send.php" method="POST" class="modal__form">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Full Name*"
-            name="name"
-            required
-          />
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Phone Number*"
-            name="phone"
-            required
-          />
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Email*"
-            name="email"
-            required
-          />
+        <form action="send.php" method="POST" class="modal__form form">
+          <div class="modal__input-group">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Full Name*"
+              name="name"
+              required
+            />
+          </div>
+          <div class="modal__input-group">
+            <input
+              type="tel"
+              class="input modal__input phone"
+              placeholder="Phone Number*"
+              name="phone"
+              required
+            />
+          </div>
+          <div class="modal__input-group">
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Your Email*"
+              name="email"
+              required
+            />
+          </div>
           <textarea
             class="message modal__message"
             placeholder="Message"
@@ -992,7 +1004,7 @@ quest"
           <img src="img/close.svg" alt="Icon: close" />
         </a>
         <h3 class="modal__title modal__title--mb-3">Send us a rating</h3>
-        <form action="send.php" method="POST" class="modal__form">
+        <form action="send.php" method="POST" class="modal__form form">
           <input
             type="text"
             class="input modal__input"
@@ -1001,14 +1013,14 @@ quest"
             required
           />
           <input
-            type="text"
-            class="input modal__input"
+            type="tel"
+            class="input modal__input phone"
             placeholder="Phone Number*"
             name="phone"
             required
           />
           <input
-            type="text"
+            type="email"
             class="input modal__input"
             placeholder="Email*"
             name="email"
@@ -1029,8 +1041,10 @@ quest"
     </div>
     <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
     <script src="js/parallax.js"></script>
     <script src="js/main.js"></script>
   </body>
