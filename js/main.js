@@ -73,12 +73,11 @@ $(document).ready(function () {
           // name: "Имя должно быть не короче 2 букв",
         },
         email: {
-          required:
-            "Enter your contact email address in the format of name@domain.com",
+          required: "Enter your contact email",
           // email: "Your email address must be in the format of name@domain.com",
         },
         phone: {
-          required: "Enter your phone number in the form +7 (999) 999-99-99",
+          required: "Enter your phone number",
         },
       },
     });
@@ -93,3 +92,4 @@ $(document).keydown(function (e) {
   if (code == 27) modalDialog.removeClass("modal__dialog--visible");
   if (code == 27) modalOverlay.removeClass("modal__overlay--visible");
 });
+AOS.init();

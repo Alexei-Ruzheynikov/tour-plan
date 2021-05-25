@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://api-maps.yandex.ru/2.1/?apikey=cd24327c-3736-46f1-888b-bb31c75f99d9&lang=ru_RU"
@@ -22,7 +23,13 @@
     <header class="navbar navbar--mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a
+            href="#"
+            class="logo"
+            data-aos="fade-right"
+            data-aos-delay="100"
+            data-aos-once="true"
+          >
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -31,6 +38,9 @@
           </a>
 
           <form
+            data-aos="fade-right"
+            data-aos-delay="200"
+            data-aos-once="true"
             action="#"
             class="search navbar__search navbar__search--mobile--hidden"
           >
@@ -44,7 +54,13 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a
+            href="#"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-right"
+            data-aos-delay="300"
+            data-aos-once="true"
+          >
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -541,9 +557,15 @@
       data-parallax="scroll"
       data-image-src="img/newsletter-bg.jpg"
       data-speed="0.2"
+      data-aos-once="true"
     >
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
+        <h2
+          class="newsletter-title newsletter__title"
+          data-aos="fade-right"
+          data-aos-delay="100"
+          data-aos-once="true"
+        >
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
@@ -551,6 +573,9 @@
           action="send.php"
           method="POST"
           class="subscribe newsletter__subscribe form"
+          data-aos="fade-left"
+          data-aos-delay="100"
+          data-aos-once="true"
         >
           <div class="subscribe__input-group">
             <input
@@ -699,7 +724,12 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-once="true"
+          >
             <img
               src="img/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -710,7 +740,12 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-once="true"
+          >
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf
@@ -722,7 +757,12 @@ course"
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-once="true"
+          >
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking
@@ -738,7 +778,12 @@ trip - full day
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="700"
+            data-aos-once="true"
+          >
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery
@@ -1046,6 +1091,7 @@ quest"
     <script src="js/swiper-bundle.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
     <script src="js/parallax.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
