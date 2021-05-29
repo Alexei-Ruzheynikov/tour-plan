@@ -9,7 +9,7 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 $email = $_POST['email'];
-
+$emailstwo = $_POST['emailstwo'];
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
 $body = "
@@ -21,7 +21,13 @@ $body = "
 $body1 = "<h2>Новое обращение</h2><br>
 <b>Адрес почты: </b>$email
 ";
-
+$body2 = "
+<h2>Новое обращение</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон:</b> $phone<br>
+<b>Сообщение:</b> $message<br>
+<b>Адрес почты: </b> $emailstwo
+";
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -67,18 +73,25 @@ try {
 // $mail->Subject = $title;
 // $mail->Body = $body; 
 
+// if(isset($_POST['name']['phone']['message']['email'])) {
+// if(isset($_POST['email'])($_POST['phone'])($_POST['message'])($_POST['email'])){
 
-if(isset($_POST['email'])){
+
+if(isset($_POST['emailstwo'])){
 $mail->isHTML(true);
 $mail->Subject = $title;
-$mail->Body = $body1;    
-} else {
-    // если нет, отправлена форма с телефоном и пр.
+$mail->Body = $body2; 
+}
+ else {
 $mail->isHTML(true);
 $mail->Subject = $title;
 $mail->Body = $body; 
 }
-
+if(isset($_POST['email'])){
+$mail->isHTML(true);
+$mail->Subject = $title;
+$mail->Body = $body1;    
+}
 
 
 // Проверяем отправленность сообщения

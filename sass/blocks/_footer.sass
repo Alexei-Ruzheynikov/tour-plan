@@ -10,11 +10,13 @@
         grid-auto-rows: minmax(40px, min-content)
         align-items: start
     &__logo
-        width: 166px
+        width: 153px
         grid-row: 1 / 3
         align-self: stretch
+        margin-top: 30px
     &__categories
         grid-row: 1 / 4
+        padding-left: 2px
     &__social
         &-links
             display: flex
@@ -24,18 +26,22 @@
         &-network
             display: flex
             align-items: start
-            
             grid-row: 2 / 4
             grid-column: span 2
+            padding-left: 5px
+            padding-top: 4px
     &__contact
         &-details
-            grid-column: span 2     
+            grid-column: span 2  
+            margin-top: 13px  
+            margin-left: -3px 
         &-form
             grid-column: span 2
+            margin-left: 5px
     &__form
         display: flex
-        align-items: center
         justify-content: space-between
+        align-items: flex-start
         flex-wrap: wrap
         max-width: 539px
     &__ul
@@ -49,10 +55,15 @@
         line-height: 23px
         margin: 0 0 16px 0
         text-transform: uppercase
+        color: $light
         &--inline
             margin: 0 43px 0 0
         &--mb-3
             margin-bottom: 30px
+        &--mb-35
+            margin-bottom: 35px
+        &-categories
+            margin-bottom: 19px
     &__item
         display: flex
         align-items: flex-start
@@ -62,25 +73,52 @@
         line-height: 160%
         color: $footer-text-color
         &--mb-2
-            margin-bottom: 20px
+            margin-bottom: 17px
     &__icon
         &-wrapper
             min-width: 40px
+            margin-left: 7px
+            margin-top: 3px
+    &-link, &-mail
+        color: $footer-text-color
+        text-decoration: none
     &__text
         color: $footer-text-color
         margin-bottom: 22px
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 160%
+        margin-top: -6px
     &__link
         text-decoration: none
-        color: inherit
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 160%
+        color: $footer-text-color
+        &:hover
+            color: lighten($footer-text-color, 15%)
     &__input
         width: 100%
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $footer-text-color
+
         &-group
             margin-bottom: 15px
-            flex-basis: 48%
+            flex-basis: 47%
+            
     &__message
         flex-basis: 100%
         margin-bottom: 23px
-
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $footer-text-color
 
     &__info
         font-style: normal
@@ -96,7 +134,9 @@
     &-confidentiality
         display: flex
         justify-content: flex-end
-        margin-top: 101px
+        margin-top: 93px
+    &__information
+        margin-top: 4px
     &__contract
         font-style: normal
         font-weight: normal
@@ -104,9 +144,19 @@
         line-height: 15px
         color: $light
         text-decoration: none
-        margin-right: 13px
-    &__contract:nth-child(3)
-        margin-right: 0
+        margin-left: 13px
+        &:hover
+            color: darken($light, 27%)
+        &:nth-child(2)
+            margin-left: 8px
+        &:nth-child(3)
+            margin-left: 9px
     &-payment
         margin-left: 277px
-        
+    &__legal
+        padding-left: 67px
+    &__additional
+        padding-left: 5px
+    &__button
+        &:hover
+            background-color: lighten($primary, 7%)

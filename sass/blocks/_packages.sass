@@ -8,6 +8,7 @@
         line-height: 45px
         text-align: center
         text-transform: uppercase
+        color: $text-color
         margin: 0
     &-cards
         display: grid
@@ -19,17 +20,19 @@
             // border: 1px solid green
             grid-column-start: 1
             grid-column-end: 3
+              
             display: flex
+            
             position: relative
             &::after
                 content: "Flash Offer"
                 position: absolute
                 top: 26px
                 left: 0
-                z-index: 10px
+                z-index: 10
                 color: $light
                 background-color: $primary
-                padding: 8px 12px 7px 11px
+                padding: 8px 22px 7px 11px
                 border-radius: 0px 4px 4px 0px
                 font-style: normal
                 font-weight: 600
@@ -71,7 +74,9 @@
         font-size: 18px
         line-height: 23px
         margin-bottom: 23px   
+        color: $light
     &__room
+        // padding-left: 0px
     &__text
         display: flex
         align-items: center
@@ -85,6 +90,7 @@
         font-size: 12px
         line-height: 15px
         margin-left: 15px
+        color: $light
     &-wrap
         width: 350px
         height: 250px
@@ -101,19 +107,27 @@
         justify-content: space-between
         align-items: flex-end
         margin-top: 24px  
+        &-detal
+            margin-left: -2px
         &-old
             font-style: normal
             font-weight: normal
             font-size: 14px
             line-height: 18px
             text-decoration-line: line-through
+            color: $light
+            padding-left: 3px
         &-new
             padding-top: 5px
             font-style: normal
             font-weight: bold
             font-size: 24px
             line-height: 30px
+            color: $light
+            margin-bottom: 5px
+            padding-left: 3px
     &__button
+        font-family: 'Nunito', sans-serif
         font-style: normal
         font-weight: 600
         font-size: 14px
@@ -124,6 +138,8 @@
         color: $light
         padding: 11px 27px 10px 26px
         cursor: pointer
+        &:hover
+            background-color: lighten($primary, 7%)
     &-wrap--first
         width: 366px
         height: 500px
@@ -131,23 +147,31 @@
         border-radius: 8px 0px 0px 8px
         overflow: hidden
     &__heading-one
-        margin-top: 6px
+        margin-top: 4px
         margin-bottom: 0
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+        color: $light
     &-cards__info-one
         display: flex
         width: 364px
         height: 500px
-        padding: 47px 21px 30px 44px
+        padding: 46px 21px 30px 43px
         border-radius: 0px 8px 8px 0px
         overflow: hidden
     &__paragraph
         font-style: normal
         font-weight: normal
+        padding-left: 1px
         font-size: 14px
         line-height: 160.6%
-        margin: 27px 0px 51px 0px
+        margin: 26px 0px 46px 0px
     &__rating
         display: flex
         align-items: center
+        &-image
+            margin-right: 2px
     &__price-one
         margin-top: 37px

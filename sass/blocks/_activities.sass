@@ -6,7 +6,9 @@
         font-size: 24px
         line-height: 30px
         text-transform: uppercase
+        margin-top: 0
         margin-bottom: 57px
+        color: #000
     &-wrapper
         display: flex
         justify-content: space-between
@@ -27,7 +29,7 @@
         right: 0
         top: 0
         bottom: 0
-        background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%)
+        background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
         z-index: -1
     &__image
         position: absolute
@@ -49,6 +51,7 @@
         font-size: 16px
         line-height: 20px
     &__button
+        font-family: 'Nunito', sans-serif
         font-style: normal
         font-weight: 600
         font-size: 12px
@@ -59,3 +62,5 @@
         background-color: $primary
         border-radius: 4px
         cursor: pointer
+        &:hover
+            background-color: lighten($primary, 7%)

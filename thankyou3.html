@@ -5,17 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
-      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://api-maps.yandex.ru/2.1/?apikey=cd24327c-3736-46f1-888b-bb31c75f99d9&lang=ru_RU"
@@ -26,13 +22,7 @@
     <header class="navbar navbar--mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a
-            href="index.html"
-            class="logo"
-            data-aos="fade-right"
-            data-aos-delay="100"
-            data-aos-once="true"
-          >
+          <a href="#" class="logo">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -41,29 +31,20 @@
           </a>
 
           <form
-            data-aos="fade-right"
-            data-aos-delay="200"
-            data-aos-once="true"
             action="#"
             class="search navbar__search navbar__search--mobile--hidden"
           >
             <input
               type="text"
               class="search__input"
-              placeholder="Search Location |"
+              placeholder="Search Location"
             />
             <button class="search__button">
               <img src="img/search.svg" alt="Icon: search" />
             </button>
           </form>
 
-          <a
-            href="#"
-            class="user navbar__user navbar__user--mobile--hidden"
-            data-aos="fade-right"
-            data-aos-delay="300"
-            data-aos-once="true"
-          >
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -82,7 +63,7 @@
       </div>
       <!-- /.container -->
       <div class="navbar-bottom">
-        <div class="container container-menu">
+        <div class="container">
           <ul class="navbar-menu">
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
               <a
@@ -139,7 +120,21 @@
         <!-- /.container -->
       </div>
     </header>
-    <section class="thankyou">
+    <nav class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-list__item">
+            <a href="#" class="breadcrumb-list__link">Home</a>
+          </li>
+          <li class="breadcrumb-list__item">
+            <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+          </li>
+          <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.breadcrumb -->
+    <section class="hotel">
       <div class="container">
         <div class="hotel-info">
           <div class="hotel-info__text">
@@ -149,25 +144,23 @@
             <p class="hotel-description hotel-info__description">
               Наш менеджер позвонит вам через 5 минут.
             </p>
-            <a href="index.html">
-              <button class="button thankyou__button">To the main</button>
-            </a>
           </div>
           <!-- /.hotel-info__text -->
         </div>
       </div>
       <!-- /.container -->
     </section>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="index.html" class="logo footer__logo">
-            <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
-          </a>
+          <img
+            src="img/vertical-logo.svg"
+            alt="Logo: Best Tour Plan"
+            class="logo footer__logo"
+          />
           <div class="footer__list footer__categories">
-            <h3 class="footer__title footer__title-categories">
-              ALL CATEGORIES
-            </h3>
+            <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">All Deals</a>
@@ -281,17 +274,10 @@
                     alt="Icon: contact-phone-call"
                   />
                 </div>
-                <div class="footer-link--wrapper">
-                  Tel (business hours) :
-                  <a class="footer-link" href="tel:269 1500"> 269 1500</a>
-                  <br />Tel (hotline) Monday - Saturday:
-                  <a class="footer-link" href="tel:52-56-61-38"> 52-56-61-38 </a
-                  >(08:00 am – 20:00 pm) <br />Tel (hotline) Sunday:
-                  <a class="footer-link" href="tel:52-56-61-38">
-                    52-56-61-38
-                  </a>
-                  (08:00 am – 14:00 pm)
-                </div>
+                Tel (business hours) : 269 1500 <br />
+                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
+                pm) <br />
+                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -301,40 +287,28 @@
                     alt="Icon: email"
                   />
                 </div>
-                <a class="footer-mail" href="mailto:cherly.lawson@example.com">
-                  cherly.lawson@example.com
-                </a>
+                cherly.lawson@example.com
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-35">
-              Send us a message
-            </h3>
-            <form action="send.php" method="POST" class="footer__form form">
-              <div class="footer__input-group">
-                <input
-                  type="text"
-                  class="input footer__input"
-                  placeholder="Your Full Name*"
-                  name="name"
-                  required
-                  minlength="2"
-                />
-              </div>
-              <div class="footer__input-group">
-                <input
-                  type="tel"
-                  class="input footer__input phone"
-                  placeholder="Phone Number*"
-                  name="phone"
-                  minlength="18"
-                  required
-                />
-              </div>
+            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+            <form action="send.php" method="POST" class="footer__form">
+              <input
+                type="text"
+                class="input footer__input"
+                placeholder="Phone Number*"
+                name="name"
+              />
+              <input
+                type="text"
+                class="input footer__input"
+                placeholder="Full Name*"
+                name="phone"
+              />
               <textarea
-                class="message footer__message"
+                class="footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
@@ -362,109 +336,10 @@
         </div>
       </div>
     </footer>
-    <div class="modal" id="booking-modal">
-      <div class="modal__overlay"></div>
-      <!-- /.modal__overlay -->
-      <div class="modal__dialog">
-        <a href="#" class="modal__close">
-          <img src="img/close.svg" alt="Icon: close" />
-        </a>
-        <h3 class="modal__title modal__title--mb-3">Booking</h3>
-        <form action="send.php" method="POST" class="modal__form form">
-          <div class="modal__input-group">
-            <input
-              type="text"
-              class="input modal__input"
-              placeholder="Full Name*"
-              name="name"
-              minlength="2"
-              required
-            />
-          </div>
-          <div class="modal__input-group">
-            <input
-              type="tel"
-              class="input modal__input phone"
-              placeholder="Phone Number*"
-              name="phone"
-              minlength="18"
-              required
-            />
-          </div>
-          <div class="modal__input-group">
-            <input
-              type="email"
-              class="input modal__input"
-              placeholder="Your Email*"
-              name="emailstwo"
-              required
-            />
-          </div>
-          <textarea
-            class="message modal__message"
-            placeholder="Message"
-            name="message"
-          ></textarea>
-          <div class="modal__block">
-            <button class="button modal__button">Send</button>
-            <span class="modal__info">* Required Fields</span>
-          </div>
-        </form>
-      </div>
-      <!-- /.modal__dialog -->
-    </div>
-    <!-- /.modal -->
-    <!-- <div class="modal" id="rating-modal">
-      <div class="modal__overlay"></div> -->
-    <!-- /.modal__overlay -->
-    <!-- <div class="modal__dialog">
-        <a href="#" class="modal__close">
-          <img src="img/close.svg" alt="Icon: close" />
-        </a>
-        <h3 class="modal__title modal__title--mb-3">Send us a rating</h3>
-        <form action="send.php" method="POST" class="modal__form form">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Full Name*"
-            name="name"
-            required
-          />
-          <input
-            type="tel"
-            class="input modal__input phone"
-            placeholder="Phone Number*"
-            name="phone"
-            required
-          />
-          <input
-            type="email"
-            class="input modal__input"
-            placeholder="Email*"
-            name="email"
-            required
-          />
-          <textarea
-            class="message modal__message"
-            placeholder="Message"
-            name="message"
-          ></textarea>
-          <div class="modal__block">
-            <button class="button modal__button">Send</button>
-            <span class="modal__info">* Required Fields</span>
-          </div>
-        </form>
-      </div> -->
-    <!-- /.modal__dialog -->
-    <!-- </div> -->
-    <!-- /.modal -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
+
     <script src="js/swiper-bundle.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
-    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

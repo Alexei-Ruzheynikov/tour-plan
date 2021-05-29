@@ -28,8 +28,12 @@
             color: inherit
             text-decoration: none
             text-transform: uppercase
+            font-style: normal
+            font-weight: bold
             font-size: 14px
             line-height: 18px
+            &:hover
+                color: darken($light, 40%)
         &__item
             &--mobile
                 &--visible
@@ -52,7 +56,10 @@
         border: none
         font-size: 12px
         line-height: 15px
-        color: $text-color
+        font-style: normal
+        font-weight: normal
+        color: #333333
+        
     &__button
         position: absolute
         top: 0
@@ -61,6 +68,9 @@
         width: 65px
         border: none
         background-color: $primary
+        cursor: pointer
+        &:hover
+            background-color: lighten($primary, 7%)
 .user
     display: flex
     align-items: center
@@ -74,4 +84,8 @@
         margin-left: 18px
         font-size: 14px
         line-height: 18px
+        font-style: normal
+        font-weight: normal
         color: $text-color
+        &:hover
+            color: lighten($text-color, 27%)

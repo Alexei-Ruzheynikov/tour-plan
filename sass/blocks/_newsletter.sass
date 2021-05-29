@@ -28,6 +28,7 @@
         font-weight: 300
         font-size: 24px
         line-height: 30px
+        margin: 0
         &__strong
             display: block
             font-style: normal
@@ -35,6 +36,7 @@
             font-size: 36px
             line-height: 45px
             text-transform: uppercase
+            color: $light
 .subscribe
     // position: relative
     min-width: 350px
@@ -45,6 +47,12 @@
     justify-content: flex-start
     flex-basis: 1
     &__input
+        &[type=email]::placeholder
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 18px
+            color: $footer-text-color
         &-group  
             max-width: 285px
             
@@ -62,10 +70,11 @@
         padding-left: 33px
         padding-right: 10px
         padding-top: 18px
-        padding-bottom: 18px
+        padding-bottom: 19px
         font-weight: 300
         font-size: 14px
         line-height: 18px
+        border-radius: 4px 0px 0px 4px
         order: -3
         
     &__button
@@ -87,5 +96,7 @@
         font-weight: bold
         font-size: 12px
         line-height: 15px
-        
+        border-radius: 0px 4px 4px 0px
+        &:hover
+            background-color: lighten($primary, 7%)
         // order: -2

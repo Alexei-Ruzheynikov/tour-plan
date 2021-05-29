@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
+      rel="preload"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
@@ -24,7 +27,7 @@
       <div class="container">
         <div class="navbar-top">
           <a
-            href="#"
+            href="index.html"
             class="logo"
             data-aos="fade-right"
             data-aos-delay="100"
@@ -47,7 +50,7 @@
             <input
               type="text"
               class="search__input"
-              placeholder="Search Location"
+              placeholder="Search Location |"
             />
             <button class="search__button">
               <img src="img/search.svg" alt="Icon: search" />
@@ -79,7 +82,7 @@
       </div>
       <!-- /.container -->
       <div class="navbar-bottom">
-        <div class="container">
+        <div class="container container-menu">
           <ul class="navbar-menu">
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
               <a
@@ -298,11 +301,31 @@
             </div>
             <div class="packages-cards__info packages-cards__info-one">
               <div class="packages__rating">
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
+                <img
+                  src="img/star.svg"
+                  alt="star"
+                  class="packages__rating-image"
+                />
+                <img
+                  src="img/star.svg"
+                  alt="star"
+                  class="packages__rating-image"
+                />
+                <img
+                  src="img/star.svg"
+                  alt="star"
+                  class="packages__rating-image"
+                />
+                <img
+                  src="img/star.svg"
+                  alt="star"
+                  class="packages__rating-image"
+                />
+                <img
+                  src="img/star.svg"
+                  alt="star"
+                  class="packages__rating-image"
+                />
               </div>
               <div class="packages__heading packages__heading-one">
                 Hotel Blue Haven
@@ -349,7 +372,7 @@
                   <div class="packages__price-new">$ 8,500</div>
                 </div>
 
-                <button class="button packages__button">Book Now</button>
+                <button class="packages__button">Book Now</button>
               </div>
             </div>
           </div>
@@ -361,7 +384,7 @@
                 class="packages-wrap__image"
               />
             </div>
-            <div class="packages-cards__info">
+            <div class="packages-cards__info packages-cards__info-other">
               <div class="packages__heading">LUX* Belle Mare</div>
               <div class="packages__room">
                 <div class="packages__text">
@@ -398,7 +421,7 @@
                   <div class="packages__price-new">$ 3,000</div>
                 </div>
 
-                <button class="button packages__button">Book Now</button>
+                <button class="packages__button">Book Now</button>
               </div>
             </div>
           </div>
@@ -410,7 +433,7 @@
                 class="packages-wrap__image"
               />
             </div>
-            <div class="packages-cards__info">
+            <div class="packages-cards__info packages-cards__info-other">
               <div class="packages__heading">White Palace</div>
               <div class="packages__room">
                 <div class="packages__text">
@@ -447,7 +470,7 @@
                   <div class="packages__price-new">$ 9,500</div>
                 </div>
 
-                <button class="button packages__button">Book Now</button>
+                <button class="packages__button">Book Now</button>
               </div>
             </div>
           </div>
@@ -459,7 +482,7 @@
                 class="packages-wrap__image"
               />
             </div>
-            <div class="packages-cards__info">
+            <div class="packages-cards__info packages-cards__info-other">
               <div class="packages__heading">Luxury Place</div>
               <div class="packages__room">
                 <div class="packages__text">
@@ -496,7 +519,7 @@
                   <div class="packages__price-new">$ 2,500</div>
                 </div>
 
-                <button class="button packages__button">Book Now</button>
+                <button class="packages__button">Book Now</button>
               </div>
             </div>
           </div>
@@ -508,7 +531,7 @@
                 class="packages-wrap__image"
               />
             </div>
-            <div class="packages-cards__info">
+            <div class="packages-cards__info packages-cards__info-other">
               <div class="packages__heading">Hotel Five Star</div>
               <div class="packages__room">
                 <div class="packages__text">
@@ -545,7 +568,7 @@
                   <div class="packages__price-new">$ 3,500</div>
                 </div>
 
-                <button class="button packages__button">Book Now</button>
+                <button class="packages__button">Book Now</button>
               </div>
             </div>
           </div>
@@ -676,12 +699,12 @@
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
-                    src="img/reviews-avatar.jpg"
-                    alt="Photo: Megan Fox"
+                    src="img/reviews-avatar-3.jpg"
+                    alt="Photo: Alex Marlin"
                     class="reviews-slider__avatar"
                   />
-                  <h3 class="reviews-slider__username">Megan Fox</h3>
-                  <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                  <h3 class="reviews-slider__username">Alex Marlin</h3>
+                  <span class="reviews-slider__date">Stayed 11 Nov, 2018</span>
                   <div class="reviews-slider__rating">
                     <img src="img/star.svg" alt="star" />
                     <img src="img/star.svg" alt="star" />
@@ -736,7 +759,10 @@
               class="card__image"
             />
 
-            <h3 class="card__title">The curious corner of chamarel</h3>
+            <h3 class="card__title">
+              The curious corner<br />
+              of chamarel
+            </h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
@@ -753,7 +779,10 @@ course"
               class="card__image"
             />
 
-            <h3 class="card__title">Gymkhana club golf course</h3>
+            <h3 class="card__title">
+              Gymkhana club golf<br />
+              course
+            </h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
@@ -773,7 +802,8 @@ trip - full day
             />
 
             <h3 class="card__title">
-              Tamarind faind falls hiking tlls hiking trip - full day
+              Tamarind falls hiking<br />
+              trip - full day
             </h3>
             <button class="card__button">Book Now</button>
           </div>
@@ -803,13 +833,13 @@ quest"
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/vertical-logo.svg"
-            alt="Logo: Best Tour Plan"
-            class="logo footer__logo"
-          />
+          <a href="index.html" class="logo footer__logo">
+            <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
+          </a>
           <div class="footer__list footer__categories">
-            <h3 class="footer__title">ALL CATEGORIES</h3>
+            <h3 class="footer__title footer__title-categories">
+              ALL CATEGORIES
+            </h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">All Deals</a>
@@ -923,10 +953,17 @@ quest"
                     alt="Icon: contact-phone-call"
                   />
                 </div>
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                pm) <br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="footer-link--wrapper">
+                  Tel (business hours) :
+                  <a class="footer-link" href="tel:269 1500"> 269 1500</a>
+                  <br />Tel (hotline) Monday - Saturday:
+                  <a class="footer-link" href="tel:52-56-61-38"> 52-56-61-38 </a
+                  >(08:00 am – 20:00 pm) <br />Tel (hotline) Sunday:
+                  <a class="footer-link" href="tel:52-56-61-38">
+                    52-56-61-38
+                  </a>
+                  (08:00 am – 14:00 pm)
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -936,21 +973,26 @@ quest"
                     alt="Icon: email"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a class="footer-mail" href="mailto:cherly.lawson@example.com">
+                  cherly.lawson@example.com
+                </a>
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+            <h3 class="footer__title footer__title--mb-35">
+              Send us a message
+            </h3>
             <form action="send.php" method="POST" class="footer__form form">
               <div class="footer__input-group">
                 <input
                   type="text"
                   class="input footer__input"
-                  placeholder="Full Name*"
+                  placeholder="Your Full Name*"
                   name="name"
                   required
+                  minlength="2"
                 />
               </div>
               <div class="footer__input-group">
@@ -959,6 +1001,7 @@ quest"
                   class="input footer__input phone"
                   placeholder="Phone Number*"
                   name="phone"
+                  minlength="18"
                   required
                 />
               </div>
@@ -1006,6 +1049,7 @@ quest"
               class="input modal__input"
               placeholder="Full Name*"
               name="name"
+              minlength="2"
               required
             />
           </div>
@@ -1015,6 +1059,7 @@ quest"
               class="input modal__input phone"
               placeholder="Phone Number*"
               name="phone"
+              minlength="18"
               required
             />
           </div>
@@ -1023,7 +1068,7 @@ quest"
               type="email"
               class="input modal__input"
               placeholder="Your Email*"
-              name="email"
+              name="emailstwo"
               required
             />
           </div>
@@ -1041,10 +1086,10 @@ quest"
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
-    <div class="modal" id="rating-modal">
-      <div class="modal__overlay"></div>
-      <!-- /.modal__overlay -->
-      <div class="modal__dialog">
+    <!-- <div class="modal" id="rating-modal">
+      <div class="modal__overlay"></div> -->
+    <!-- /.modal__overlay -->
+    <!-- <div class="modal__dialog">
         <a href="#" class="modal__close">
           <img src="img/close.svg" alt="Icon: close" />
         </a>
@@ -1081,9 +1126,9 @@ quest"
             <span class="modal__info">* Required Fields</span>
           </div>
         </form>
-      </div>
-      <!-- /.modal__dialog -->
-    </div>
+      </div> -->
+    <!-- /.modal__dialog -->
+    <!-- </div> -->
     <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
