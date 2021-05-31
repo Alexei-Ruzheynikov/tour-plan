@@ -82,6 +82,12 @@
     &-link, &-mail
         color: $footer-text-color
         text-decoration: none
+    &-mail
+        &:hover
+            color: lighten($footer-text-color, 13%)
+    &-link
+        &:hover
+            color: lighten($footer-text-color, 13%)
     &__text
         color: $footer-text-color
         margin-bottom: 22px

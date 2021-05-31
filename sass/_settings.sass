@@ -52,31 +52,40 @@ img
     font-size: 12px
     line-height: 15px
     color: $text-color
+
 [type=name]::placeholder
     font-style: normal
     font-weight: normal
     font-size: 12px
     line-height: 15px
     color: $footer-text-color
-[type=email]::placeholder
-    font-style: normal
-    font-weight: 300
-    font-size: 14px
-    line-height: 18px
-    color: $footer-text-color
-[type=phone]::placeholder
+.search
+    [type=text]::placeholder
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $text-color
+.footer__input-group, .modal__input-group, .modal__message
+    [name=name]::placeholder, [name=phone]::placeholder, [type=email]::placeholder
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $footer-text-color
+.modal__form textarea::placeholder, .footer__form textarea::placeholder
     font-style: normal
     font-weight: normal
     font-size: 12px
     line-height: 15px
     color: $footer-text-color
-[type=message]::placeholder
-    font-style: normal
-    font-weight: normal
-    font-size: 12px
-    line-height: 15px
-    color: $footer-text-color
-
+.subscribe__input-group
+    [type=email]::placeholder
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 18px
+        color: $footer-text-color
 .thankyou
     padding-top: 30px
     padding-bottom: 30px    
