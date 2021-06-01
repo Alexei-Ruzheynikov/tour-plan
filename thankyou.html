@@ -18,7 +18,10 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=cd24327c-3736-46f1-888b-bb31c75f99d9&lang=ru_RU"></script>
+    <!-- <script
+      defer
+      src="https://api-maps.yandex.ru/2.1/?apikey=cd24327c-3736-46f1-888b-bb31c75f99d9&lang=ru_RU"
+    ></script> -->
   </head>
   <body>
     <header class="navbar navbar--mobile_fixed">
@@ -147,9 +150,9 @@
             <p class="hotel-description hotel-info__description">
               Our manager will call you in 5 minutes.
             </p>
-            <a href="index.html">
-              <button class="button thankyou__button">To the main</button>
-            </a>
+            <!-- <button class="button thankyou__button"> -->
+            <a class="thankyou__link button" href="index.html">To the main</a>
+            <!-- </button> -->
           </div>
           <!-- /.hotel-info__text -->
         </div>
@@ -227,20 +230,32 @@
                 href="https://www.facebook.com/tour-plan/"
                 target="_blank"
                 class="footer__link"
-                ><img src="img/facebook.svg" alt="Icon: facebook"
-              /></a>
+                ><svg class="footer__svg">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+                <!-- <img src="img/facebook.svg" alt="Icon: facebook"
+              /> -->
+              </a>
               <a
                 href="https://www.youtube.com/channel/tour-plan/"
                 target="_blank"
                 class="footer__link"
-                ><img src="img/youtube.svg" alt="Icon: youtube"
-              /></a>
+                ><svg class="footer__svg">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
+                <!-- <img src="img/youtube.svg" alt="Icon: youtube"
+              /> -->
+              </a>
               <a
                 href="https://www.instagram.com/tour-plan/"
                 target="_blank"
                 class="footer__link"
-                ><img src="img/instagram.svg" alt="Icon: instagram"
-              /></a>
+                ><svg class="footer__svg">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+                <!-- <img src="img/instagram.svg" alt="Icon: instagram"
+              /> -->
+              </a>
             </div>
             <!-- /.footer__social-links -->
           </div>
@@ -422,13 +437,13 @@
     </div>
     <!-- /.modal -->
 
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/jquery.mask.min.js"></script>
+    <script defer src="js/jquery.validate.min.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-    <script src="js/parallax.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/main.js"></script>
+    <script defer src="js/parallax.js"></script>
+    <script defer src="js/aos.js"></script>
+    <script defer src="js/main.js"></script>
   </body>
 </html>

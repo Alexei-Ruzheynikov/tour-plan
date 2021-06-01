@@ -197,7 +197,7 @@
     .search__button, .booking__button, .packages__button, .subscribe__button, .card__button, .footer__button, .modal__button
         &:hover
             background-color: $primary
-    .thankyou__button
+    .thankyou__link
         &:hover
             background-color: $primary
     .user__name
@@ -206,6 +206,9 @@
     .footer__link, .footer-link, .footer-mail
         &:hover
             color: $footer-text-color
+    .footer__svg
+        &:hover
+            fill: $footer-text-color
     .footer__contract, .navbar-menu__link
         &:hover
             color: $light
@@ -392,77 +395,12 @@
         &-wrap--first
             width: 100%
             height: 250px
-    .footer
-        &__input
-            &-group 
-                flex-basis: 100%
-        &__title
-            white-space: normal
-    .modal
-        &__block
-            display: flex
-            flex-direction: column-reverse
-            align-items: flex-start
-        &__info
-            padding-top: 10px
-            padding-bottom: 10px
-@media (max-width: 576px)
-    .container, .newsletter-wrapper
-        max-width: 480px
-        width: 92%
-    // .logo
-    //     &__image
-    //         width: 99px
-    .hotel
-        padding-top: 5px
-        &-slider
-            height: 179px
-            margin-bottom: 20px
-            margin-top: 18px
-        &-info
-            &__offer
-                margin-top: 0px
-            &__name
-                margin-top: 9px
-    
-    .newsletter
-        padding: 76px 0 78px 0
-        &__title
-            margin-bottom: 37px
-            margin-top: 7px
-            margin-left: 7px
-        &-title
-            &__strong
-                margin-top: 4px
-    .subscribe
-        min-width: 100%
-        
-        &__input
-            width: 209px
-            margin-left: 6px
-    .reviews
-        padding-top: 39px
-        &__title
-            font-size: 18px
-            width: 90%
-            margin-left: 13px
-            margin-bottom: 42px
-        &-slider
-            &__text
-                text-align: left
-            &__button
-                top: 30px
-                &--prev
-                    left: 40%
-                &--next
-                    right: 42% 
-
-    .card
-        width: 100%
-        margin-top: -10px
-        margin-bottom: 10px
-        &__image
-            
+    // .footer
+    //     &__input
+    //         &-group 
+    //             flex-basis: 100%
+    //     &__title
+    //         white-space: normal
     .footer
         padding-top: 167px
         padding-bottom: 18px
@@ -538,6 +476,78 @@
             margin-left: 10px
         &-link
             white-space: nowrap
+    .modal
+        &__block
+            display: flex
+            flex-direction: column-reverse
+            align-items: flex-start
+        &__info
+            padding-top: 10px
+            padding-bottom: 10px
+    .modal__dialog
+        overflow-y: auto
+        max-height: 100vh
+
+    .navbar-bottom--visible
+        overflow-y: auto
+        max-height: 100vh
+@media (max-width: 576px)
+    .container, .newsletter-wrapper
+        max-width: 480px
+        width: 92%
+    // .logo
+    //     &__image
+    //         width: 99px
+    .hotel
+        padding-top: 5px
+        &-slider
+            height: 179px
+            margin-bottom: 20px
+            margin-top: 18px
+        &-info
+            &__offer
+                margin-top: 0px
+            &__name
+                margin-top: 9px
+    
+    .newsletter
+        padding: 76px 0 78px 0
+        &__title
+            margin-bottom: 37px
+            margin-top: 7px
+            margin-left: 7px
+        &-title
+            &__strong
+                margin-top: 4px
+    .subscribe
+        min-width: 100%
+        
+        &__input
+            width: 209px
+            margin-left: 6px
+    .reviews
+        padding-top: 39px
+        &__title
+            font-size: 18px
+            width: 90%
+            margin-left: 13px
+            margin-bottom: 42px
+        &-slider
+            &__text
+                text-align: left
+            &__button
+                top: 30px
+                &--prev
+                    left: 40%
+                &--next
+                    right: 42% 
+
+    .card
+        width: 100%
+        margin-top: -10px
+        margin-bottom: 10px
+            
+
     .search
         &__input
             width: 245px
@@ -573,13 +583,7 @@
             order: 1
         &__card:nth-child(4)
             order: 2
-    .modal__dialog
-        overflow-y: auto
-        max-height: 100vh
 
-    .navbar-bottom--visible
-        overflow-y: auto
-        max-height: 100vh
     .modal__input
         height: 40px
     // .modal__message
@@ -599,5 +603,7 @@
             margin-top: -100px
     .logo
         width: 96px
-
+    .footer__input-group 
+        flex-basis: 100%
+    
         
