@@ -1,10 +1,9 @@
 *
-    box-sizing: border-box
+    box-sizing: border-box  
 body
     font-family: 'Mulish', sans-serif
     background-color: $secondary
     color: $text-color
-
 .container
     max-width: 1110px
     margin: auto
@@ -60,6 +59,8 @@ img
     line-height: 15px
     color: $footer-text-color
 .search
+    [type=text]
+        color: $text-color
     [type=text]::placeholder
         font-style: normal
         font-weight: normal
@@ -67,19 +68,26 @@ img
         line-height: 15px
         color: $text-color
 .footer__input-group, .modal__input-group, .modal__message
+    [name=name], [name=phone], [type=email]
+        color: $text-color
     [name=name]::placeholder, [name=phone]::placeholder, [type=email]::placeholder
         font-style: normal
         font-weight: normal
         font-size: 12px
         line-height: 15px
         color: $footer-text-color
-.modal__form textarea::placeholder, .footer__form textarea::placeholder
-    font-style: normal
-    font-weight: normal
-    font-size: 12px
-    line-height: 15px
-    color: $footer-text-color
+.modal__form, .footer__form
+    textarea
+        color: $text-color
+    textarea::placeholder
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $footer-text-color
 .subscribe__input-group
+    [type=email]
+        color: $text-color
     [type=email]::placeholder
         font-style: normal
         font-weight: 300

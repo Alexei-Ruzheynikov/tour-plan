@@ -44,6 +44,7 @@
         align-items: flex-start
         flex-wrap: wrap
         max-width: 539px
+        color: $text-color
     &__ul
         padding: 0
         margin: 0
@@ -56,6 +57,7 @@
         margin: 0 0 16px 0
         text-transform: uppercase
         color: $light
+        white-space: nowrap
         &--inline
             margin: 0 43px 0 0
         &--mb-3
@@ -103,8 +105,9 @@
         font-size: 14px
         line-height: 160%
         color: $footer-text-color
-        &:hover
-            color: lighten($footer-text-color, 15%)
+        img
+            &:hover
+                color: lighten($footer-text-color, 15%)
     &__input
         width: 100%
         font-style: normal

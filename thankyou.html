@@ -10,17 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
-      rel="preload"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=cd24327c-3736-46f1-888b-bb31c75f99d9&lang=ru_RU"
-      type="text/javascript"
-    ></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=cd24327c-3736-46f1-888b-bb31c75f99d9&lang=ru_RU"></script>
   </head>
   <body>
     <header class="navbar navbar--mobile_fixed">
@@ -225,13 +223,22 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
+              <a
+                href="https://www.facebook.com/tour-plan/"
+                target="_blank"
+                class="footer__link"
                 ><img src="img/facebook.svg" alt="Icon: facebook"
               /></a>
-              <a href="#" class="footer__link"
+              <a
+                href="https://www.youtube.com/channel/tour-plan/"
+                target="_blank"
+                class="footer__link"
                 ><img src="img/youtube.svg" alt="Icon: youtube"
               /></a>
-              <a href="#" class="footer__link"
+              <a
+                href="https://www.instagram.com/tour-plan/"
+                target="_blank"
+                class="footer__link"
                 ><img src="img/instagram.svg" alt="Icon: instagram"
               /></a>
             </div>
@@ -281,9 +288,9 @@
                     alt="Icon: contact-phone-call"
                   />
                 </div>
-                <div class="footer-link--wrapper">
+                <div class="footer__wrapper">
                   Tel (business hours) :
-                  <a class="footer-link" href="tel:269 1500"> 269 1500</a>
+                  <a class="footer-link" href="tel:269-1500"> 269 1500</a>
                   <br />Tel (hotline) Monday - Saturday:
                   <a class="footer-link" href="tel:52-56-61-38"> 52-56-61-38 </a
                   >(08:00 am – 20:00 pm) <br />Tel (hotline) Sunday:
@@ -395,7 +402,7 @@
             <input
               type="email"
               class="input modal__input"
-              placeholder="Your Email*"
+              placeholder="Email*"
               name="emailstwo"
               required
             />
@@ -414,50 +421,7 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
-    <!-- <div class="modal" id="rating-modal">
-      <div class="modal__overlay"></div> -->
-    <!-- /.modal__overlay -->
-    <!-- <div class="modal__dialog">
-        <a href="#" class="modal__close">
-          <img src="img/close.svg" alt="Icon: close" />
-        </a>
-        <h3 class="modal__title modal__title--mb-3">Send us a rating</h3>
-        <form action="send.php" method="POST" class="modal__form form">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Full Name*"
-            name="name"
-            required
-          />
-          <input
-            type="tel"
-            class="input modal__input phone"
-            placeholder="Phone Number*"
-            name="phone"
-            required
-          />
-          <input
-            type="email"
-            class="input modal__input"
-            placeholder="Email*"
-            name="email"
-            required
-          />
-          <textarea
-            class="message modal__message"
-            placeholder="Message"
-            name="message"
-          ></textarea>
-          <div class="modal__block">
-            <button class="button modal__button">Send</button>
-            <span class="modal__info">* Required Fields</span>
-          </div>
-        </form>
-      </div> -->
-    <!-- /.modal__dialog -->
-    <!-- </div> -->
-    <!-- /.modal -->
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
